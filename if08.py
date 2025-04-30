@@ -11,4 +11,22 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if 10<=a<=99:
+     if a%2==0:
+        return " musbat juft ikki xonali raqam"
+     else:
+        return "juft musbat ikki xonali raqam"
+    elif -99<=a<=-10:
+     if a%2==1:
+        return "manfiy toq raqam"
+     else:
+        return "manfiy juft raqam"
+    else:
+        return "bunday son yo'q"
+
+    
+      
+    
+
+a=int(input("sonni kiriting:"))
+print(main(a))
