@@ -13,4 +13,16 @@ def main(temp):
     Returns:
         string: the message to print
     """
-    return
+    if 1<=temp<=10:
+        return "very cold"
+    elif 11<=temp<=20:
+        return "cold"
+    elif 21<=temp<=30:
+        return "hot"
+    elif temp>40:
+        return "very hot"
+    else:
+        return "there is not temprature"
+temp=float(input("temperaturani kiriting:"))
+print(main(temp))
+      
