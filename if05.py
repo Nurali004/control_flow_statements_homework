@@ -8,4 +8,9 @@ def main(a,b,c):
     returns:
         integer: the number of negative numbers in the given numbers
     """
-    return
+    return (a<0)+(b<0)+(c<0)
+
+a=int(input("sonni kiriting:"))
+b=int(input("sonni kiriting:"))
+c=int(input("sonni kiriting:"))
+print(main(a,b,c))
