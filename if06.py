@@ -13,4 +13,16 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    neg=(a>0)+(b>0)+(c>0)
+    pos=(a<0)+(b<0)+(c<0)
+    if neg>pos:
+        return "there are alot of positive numbers"
+    elif neg<pos:
+        return "there are a lot of negative numbers"
+    else:
+        return "it is not equal"
+
+a=int(input("sonni kiriting:"))
+b=int(input("sonni kiriting:"))
+c=int(input("sonni kiriting:"))
+print(main(a,b,c))
